@@ -15,7 +15,7 @@ var MessagesView = {
         Messages[i].username = '';
       }
       html += MessageView.render(Messages[i]);
-      console.log(Messages[i]);
+      // console.log(Messages[i]);
     }
 
     this.$chats.append(html);

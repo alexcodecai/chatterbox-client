@@ -19,10 +19,11 @@ var App = {
 
   fetch: function(callback = ()=>{}) {
     Parse.readAll((data) => {
-      // examine the response from the server request:
-      // console.log(data);
+      //examine the response from the server request:
+      console.log(data);
       Messages = data.results;
-      console.log(Messages[0]);
+      // console.log(Messages[0]);
+      MessagesView.$chats.html('');
       MessagesView.render();
       callback();
     });
